@@ -1,6 +1,6 @@
 # Stock Market Price Prediction
 
-## Author(s)
+## Author
 Suhani Bode  
 
 ## Affiliation
