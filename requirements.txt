@@ -7,3 +7,5 @@ streamlit
 plotly
 shap
 ta
+fastapi
+uvicorn
