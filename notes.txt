@@ -1,0 +1,57 @@
+1. PROJECT DESCRIPTION
+QuantSense AI is an institutional-grade predictive analytics platform that uses Machine Learning (XGBoost & Neural Networks) to forecast stock market prices. It features a fast Python backend and a stunning, interactive glassmorphic web UI.
+
+2. REQUIREMENTS
+- Python 3.9+
+- pip (Python package manager)
+- Dependencies listed in requirements.txt (FastAPI, XGBoost, Scikit-Learn, Pandas, yfinance)
+
+3. HOW TO RUN PROJECT
+Step 1: Install dependencies
+> pip install -r requirements.txt
+
+Step 2: Run the data ingestion and model training pipeline
+> python quantsense_pipeline.py
+
+Step 3: Start the backend web server
+> uvicorn fastapi_app:app --host 127.0.0.1 --port 8000
+
+Step 4: Open your browser and navigate to http://localhost:8000
+
+4. HOW IT WORKS (TECH FLOW)
+1. Data Ingestion: The pipeline script fetches 2 years of historical stock data from Yahoo Finance.
+2. Feature Engineering: It calculates momentum and volatility indicators (RSI, MACD, Bollinger Bands).
+3. Model Training: XGBoost and MLP Regressor models are trained on the engineered features to predict the next day's close price.
+4. Serving: The FastAPI server exposes endpoints that load the saved models and serve predictions.
+5. Visualization: The frontend JavaScript fetches the API data and renders it interactively using Chart.js on a custom HTML canvas.
+
+5. FEATURES
+- Real-time AI forecasting (XGBoost & Neural Networks)
+- Automated technical indicator engineering (RSI, MACD)
+- Beautiful, fully custom Single Page Application (SPA) UI
+- Smooth CSS animations and glassmorphism styling
+- Lightning-fast API utilizing FastAPI
+
+6. COMMON ISSUES & FIXES
+- Issue: "ModuleNotFoundError"
+  Fix: Ensure your virtual environment is activated and you ran `pip install -r requirements.txt`.
+- Issue: "Port 8000 already in use"
+  Fix: Run the server on a different port using `--port 8080`.
+- Issue: Data not showing on website
+  Fix: Ensure you have run `python quantsense_pipeline.py` first so the data/ and models/ folders are populated.
+
+7. SUPPORTED BROWSERS
+- Google Chrome (Recommended)
+- Mozilla Firefox
+- Microsoft Edge
+- Safari
+
+8. TIPS FOR BEST RESULTS
+- Update the stock ticker symbols in `quantsense_pipeline.py` and `static/index.html` to track your own favorite companies.
+- Run the pipeline script daily after market close to get the most accurate predictions for the next trading day.
+
+9. AUTHOR
+Suhani Bode
+
+10. PROJECT LINK
+https://github.com/suhanibode248/Stock-market-price-prediction.git

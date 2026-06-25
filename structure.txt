@@ -1,0 +1,31 @@
+Stock Market price prediction/
+│
+├── data/                      # Processed datasets and metrics
+│   ├── AAPL_metrics.pkl
+│   ├── AAPL_processed.csv
+│   ├── GOOGL_metrics.pkl
+│   ├── GOOGL_processed.csv
+│   ├── MSFT_metrics.pkl
+│   └── MSFT_processed.csv
+│
+├── models/                    # Serialized trained machine learning models
+│   ├── AAPL_mlp.pkl
+│   ├── AAPL_xgb.pkl
+│   ├── GOOGL_mlp.pkl
+│   ├── GOOGL_xgb.pkl
+│   ├── MSFT_mlp.pkl
+│   └── MSFT_xgb.pkl
+│
+├── static/                    # Frontend Web UI files
+│   ├── index.html             # Main dashboard UI
+│   ├── script.js              # JavaScript for API fetching & Chart.js rendering
+│   └── style.css              # Custom CSS with glassmorphism & animations
+│
+├── venv/                      # Python virtual environment
+├── app.py                     # Legacy Streamlit app (Deprecated)
+├── fastapi_app.py             # Main FastAPI backend server
+├── quantsense_pipeline.py     # Data ingestion & Model training pipeline
+├── requirements.txt           # Python dependencies
+├── structure.txt              # Project directory structure
+├── notes.txt                  # Setup and execution notes
+└── README.md                  # Comprehensive academic project documentation

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuantSense AI</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@500;700&display=swap" rel="stylesheet">
+    <!-- Chart.js for visualization -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="glow-orb orb1"></div>
+        <div class="glow-orb orb2"></div>
+    </div>
+
+    <!-- Floating Navigation -->
+    <nav class="floating-nav glass">
+        <div class="nav-logo">
+            <span class="gradient-text">QuantSense AI</span>
+        </div>
+        <div class="nav-controls">
+            <select id="asset-select" class="glass-input">
+                <option value="AAPL">Apple (AAPL)</option>
+                <option value="MSFT">Microsoft (MSFT)</option>
+                <option value="GOOGL">Google (GOOGL)</option>
+            </select>
+            <select id="model-select" class="glass-input">
+                <option value="xgb">XGBoost AI</option>
+                <option value="mlp">Neural Network</option>
+            </select>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        
+        <!-- Header -->
+        <header class="fade-in">
+            <h1 class="gradient-text">Institutional-Grade Predictive Analytics</h1>
+            <p class="subtitle">Real-time AI forecasts powered by advanced machine learning models.</p>
+        </header>
+
+        <!-- KPI Cards -->
+        <section class="kpi-grid slide-up">
+            <div class="glass-card tilt-card">
+                <h3 class="card-label">Current Price</h3>
+                <div class="card-value" id="price-val">Loading...</div>
+                <div class="card-subtext" id="price-change">--</div>
+            </div>
+            <div class="glass-card tilt-card">
+                <h3 class="card-label">Next Day Forecast</h3>
+                <div class="card-value gradient-text" id="pred-val">Loading...</div>
+                <div class="card-subtext" id="pred-change">--</div>
+            </div>
+            <div class="glass-card tilt-card">
+                <h3 class="card-label">RSI (14)</h3>
+                <div class="card-value" id="rsi-val" style="color: #c084fc;">Loading...</div>
+                <div class="card-subtext">Momentum Indicator</div>
+            </div>
+            <div class="glass-card tilt-card">
+                <h3 class="card-label">Directional Accuracy</h3>
+                <div class="card-value" id="da-val" style="color: #34d399;">Loading...</div>
+                <div class="card-subtext">Model Reliability</div>
+            </div>
+        </section>
+
+        <!-- Chart Section -->
+        <section class="chart-section glass-card slide-up-delayed">
+            <div class="chart-header">
+                <h2>Price Action & AI Forecast Overlays</h2>
+            </div>
+            <div class="chart-container">
+                <canvas id="mainChart"></canvas>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
