@@ -1,6 +1,6 @@
 ## Live Demo
 
-🔗 **Deployment Link:** [Click Here to View Project]()
+🔗 **Deployment Link:** [Click Here to View Project](https://stock-market-price-prediction-lauq.onrender.com/)
 
 You can access and test the complete working project using the live deployment link above.
 
