@@ -54,4 +54,5 @@ Step 4: Open your browser and navigate to http://localhost:8000
 Suhani Bode
 
 10. PROJECT LINK
-https://github.com/suhanibode248/Stock-market-price-prediction.git
+Github link (https://github.com/suhanibode248/Stock-market-price-prediction.git)
+Deploy link (https://stock-market-price-prediction-lauq.onrender.com)
